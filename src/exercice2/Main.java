@@ -1,12 +1,11 @@
 package exercice2;
-
 import java.util.Scanner;
 
 public class Main {
 
     public static boolean verifierTexte(String s, Verificateur v) { return v.tester(s); }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         Verificateur vide = s -> s.isEmpty();
         Verificateur longueur = s -> s.length() > 5;
         Verificateur containA = s -> s.contains("a");

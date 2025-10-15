@@ -1,15 +1,12 @@
 package exercice1;
-
 import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
 
-    public static int effectuerOperation(int a, int b, operation op){
-        return op.calculer(a,b);
-    }
+    public static int effectuerOperation(int a, int b, operation op){ return op.calculer(a,b); }
 
-    public static void main(String[] args) {
+    static void main(String[] args) {
         operation addition = (x, y) -> x + y;
         operation soustraction = (x, y) -> x - y;
         operation multiplication = (x, y) -> x * y;
